@@ -1,0 +1,155 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: helvetica;
+}
+:root{
+    font-size: 16px;
+}
+ul{
+    list-style: none;
+}
+body{
+    margin: 3rem;
+    display: grid;
+    background-color: goldenrod;
+    justify-items: center;
+    margin-top: 60px;
+}
+img{
+    max-width: 70%;
+    display: block;
+}
+header{
+    display: grid;
+    justify-content: center;
+    gap: 60px;
+}
+.logo{
+    width: 10%;
+    max-width: 100%;
+   
+}
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+}
+a{
+    text-decoration: none;
+}
+
+.menu a{
+    display: block;
+    font-size: 2rem;
+    text-transform: uppercase;
+    background-color: yellow;
+    padding: 15px 30px;
+    border-radius: 5px;
+    color: black;
+    border: 3px black;
+}
+.menu a:hover{
+    border-color: red;
+}
+.conteudo{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    max-width: 1000px;
+}
+.introducao{
+    background-color: goldenrod;
+    padding: 40px;
+    margin-top: 60px;
+    text-align: right;
+    gap: 20px;
+    justify-items: end;
+    position: relative;
+}
+.introducao h1{
+    font-size: 2rem;
+}
+
+.introducao ::before{
+    content: '';
+    width:60px;
+    background: red;
+    top: 30px;
+    height: 4px;
+    position: absolute;
+
+}
+.introducao p{
+    margin: 30px;
+    font-size: 1.5rem;
+}
+.botao{
+    display: inline-block;
+    background: red;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 10px;
+    text-transform: uppercase;
+
+}
+.botao:hover{
+    background: darkred;
+}
+.carro{
+    width: 50%;
+    align-self: center;
+}
+.subtitulo{
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: rgba(0,0,0,0.9);
+    text-align: right;
+    padding: 40px;
+    align-self: center;
+}
+.situacoes{        
+    background: goldenrod;
+    padding: 40px;
+
+}
+.situacoes_diversas{
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    gap:10px 20px;
+    align-content: start;
+    border-left: 4px solid transparent;
+    padding: 20px;
+}
+.situacoes_diversas:nth-child(even){
+    background: orange;
+}
+.situacoes_diversas:nth-child(odd){
+    background: orangered;
+}
+.situacoes_diversas:hover{
+    border-color: red ;
+}
+.situacoes_diversas h3{
+    padding-left:20px;
+}
+.situacoes_diversas p{
+    grid-column: 2;
+    padding-left: 10px;
+
+}
+.img_situacoes{
+    padding-right: 0px;
+    margin-right: 0px;
+    width: 100%;
+}
+
+.rodape{
+    background: gold;
+    width: 100%;
+    text-align: center;
+    margin-top: 60px;
+    padding: 40px;
+    box-sizing: border-box;
+}
